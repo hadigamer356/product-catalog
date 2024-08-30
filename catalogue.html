@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalogue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%; /* This creates a square aspect ratio */
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_1.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 1</h3>
+                <p class="product-price">$19.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_2.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 2</h3>
+                <p class="product-price">$29.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_3.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 3</h3>
+                <p class="product-price">$39.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_4.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 4</h3>
+                <p class="product-price">$49.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_5.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 5</h3>
+                <p class="product-price">$59.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_6.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 6</h3>
+                <p class="product-price">$69.99</p>
+            </div>
+        </div>
+
+        <!-- Add more products as needed -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/pic1.jpeg');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 7</h3>
+                <p class="product-price">$19.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_2.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 8</h3>
+                <p class="product-price">$29.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_3.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 9</h3>
+                <p class="product-price">$39.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_4.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 10</h3>
+                <p class="product-price">$49.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_5.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 11</h3>
+                <p class="product-price">$59.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('insert_image_6.png');"></div>
+            <div class="product-info">
+                <h3 class="product-title">Product 12</h3>
+                <p class="product-price">$69.99</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
